@@ -1,0 +1,46 @@
+
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>드림왕자의 강의_HTML5 시작</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+            <input list="lectures" name="lecture">
+                <datalist id="lectures">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JAVA">
+                    <option value="C++">
+                </datalist>
+            <input type="submit" value="전송">
+        </form>
+        <br><br><hr>
+
+        <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+            사용자 : <br>
+            <input type="text" name="username"><br>
+            암호화방법 : <br>
+            <keygen name="security"><br>
+            <input type="submit" value="전송">
+        </form>
+        <br><br><hr>
+
+        <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" oninput="total.value=parseInt(value01.value)/parseInt(value02.value)">
+            <input type="number" id="value01" name="input01" value="20">
+            /
+            ( 0
+            <input type="range" id="value02" name="input02" value="50" min="0" max="100">
+            100 )
+            =
+            <output name="total" for="value01 value02"></output><br><br>
+        </form>
+    </body>
+ 
+</html>

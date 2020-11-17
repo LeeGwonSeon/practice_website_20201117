@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>드림왕자의 강의_HTML 입력방식</title>
+        
+    </head>
+    
+    <body>
+            <!--텍스트 입력-->
+           <form action="/examples/media/request.php">
+            검색할 내용을 입력하세요 :
+            <input type="text" name="search">
+            </form>
+            <br><hr>
+
+            <!--비밀번호 입력-->
+            <form>
+                사용자 : <br><input type="text" name="usename"><br>
+                비밀번호 : <br><input type="password" name="password">
+            </form>
+            <br><hr>
+
+            <!--라디오 버튼-->
+            <form>
+                <input type="radio" name="lecture" value="html" checked> HTML <br>
+                <input type="radio" name="lecture" value="css"> CSS <br>
+                <input type="radio" name="lecture" value="java"> JAVA <br>
+                <input type="radio" name="lecture" value="cpp"> C++
+            </form>
+            <br><hr>
+
+            <!--체크박스-->
+            <form>
+                <input type="checkbox" name="lecture" value="html" checked> HTML <br>
+                <input type="checkbox" name="lecture" value="css"> CSS <br>
+                <input type="checkbox" name="lecture" value="java"> JAVA <br>
+                <input type="checkbox" name="lecture" value="cpp"> C++
+            </form>
+            <br><hr>
+
+            <!--파일 선택-->
+            <form>
+                <input type="file" name="upload_file" accept="image/">
+            </form>
+            <br><hr>
+
+            <!--선택 입력-->
+            <select name="fruit">
+                <option value="apple"> 사과
+                <option value="orange" selected> 귤
+                <option value="strawberry"> 딸기
+                <option value="peach"> 복숭아
+            </select>
+            <br><hr>
+
+            <!--문장 입력-->
+            <textarea name="message" rows="5" cols="30">여기에 적으세요.</textarea>
+            <br><br><hr>
+
+            <!--버튼-->
+            <button type="button" onclick="alert('버튼을 클릭하셨군요!')">버튼을 눌러주세요!</button>
+            <br><br><hr>
+
+            <!--전송 버튼-->
+            <form action="/examples/media/request.php">
+                어릴 때 자신의 별명을 적어주세요 : <br>
+                <input type="text" name="nickname" value="별명"><br><br>
+                <input type="submit" value="전송">
+            </form>
+            <br><br><hr>
+
+            <!--필드셋(fieldset)-->
+            <form action="/examples/media/request.php">
+                <fieldset>
+                    <legend>입력 양식</legend>
+                    이름 : <br>
+                    <input type="text" name="username"><br>
+                    이메일 : <br>
+                    <input type="text" name="email"><br><br>
+                    <input type="submit" value="전송">
+                </fieldset>
+            </form>
+    </body>
+ 
+</html>

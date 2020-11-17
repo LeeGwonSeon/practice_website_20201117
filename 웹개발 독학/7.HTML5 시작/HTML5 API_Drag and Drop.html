@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드림왕자의 강의_HTML5 API</title>
+    <style>
+        div{
+            width: 630px;
+            height: 420px;
+            padding: 10px;
+            border: solid 15px #8b4513;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+      <h1>드래그 앤 드롭을 이용한 객체의 이동</h1>
+
+      <p>김고은 그림을 드래그해서 옆의 사각형으로 옮겨보세요!</p>
+
+      <div ondrop="drop(event)" ondragover="dragEnter(event)">
+        <img id="kimgoen" width="630px" height="420px" src="D:\웹개발 독학\imeage& audio file\01.22199898.1.jpg" draggable="true" ondragstart="drag(event)">
+      </div>
+      <div ondrop="drop(event)" ondragover="dragEnter(event)"></div>
+
+      <script>
+          function dragEnter(ev){
+              ev.preventDefault();
+          }
+
+          function drag(ev){
+              ev.dataTransfer.setData("text", ev.target.id);
+          }
+
+          function drop(ev){
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+          }
+      </script>
+</body>
+</html>
+</body>
+</html>

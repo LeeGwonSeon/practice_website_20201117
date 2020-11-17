@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>드림왕자의 강의_HTML 기본 요소</title>
+        <style>
+            table, th, td {border: 1px solid black; border-collapse: collapse;}
+        </style>
+    </head>
+
+    <body>
+        <table style="width: 100%;">
+            <tr style="background-color: lightgray;">
+                <th>참치</th>
+                <th>고래</th>
+            </tr>
+
+            <tr>
+                <td>상어</td>
+                <td>문어</td>
+            </tr>
+
+            <tr>
+                <td>오징어</td>
+                <td>고등어</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--테이블의 열 합치기-->
+        <table style="width: 100%;">
+            <tr>
+                <td>참치</td>
+                <td colspan="2">고래</td>
+            </tr>
+
+            <tr>
+                <td>상어</td>
+                <td>문어</td>
+                <td>꽁치</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--테이블의 행 합치기-->
+        <table style="width: 100%;">
+            <tr>
+                <td rowspan="2">상어</td>
+                <td>문어</td>
+                <td>꽁치</td>
+            </tr>
+
+            <tr>
+                <td>고등어</td>
+                <td>돌고래</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--테이블의 열과 행 합치기-->
+        <table style="width: 100%;">
+            <tr>
+                <td colspan="6">1</td>
+            </tr>
+            
+            <tr>
+                <td colspan="6">2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">3</td>
+                <td rowspan="3">4</td>
+                <td colspan="2">5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">10</td>
+            </tr>
+        </table>    
+        <br>
+
+        <!--테이블의 캡션(caption)설정-->
+        <table style="width: 100%;">
+            <caption>해양 생물</caption>
+            <tr>
+                <td>참치</td>
+                <td>고래</td>
+                <td>날치</td>
+            </tr>
+        </table>
+    </body>
+</html>

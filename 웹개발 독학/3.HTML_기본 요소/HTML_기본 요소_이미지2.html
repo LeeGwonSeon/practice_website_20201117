@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>드림왕자의 강의_HTML 기본 요소</title>
+        <style>
+            img{
+                width: 100%;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--이미지의 크기(width, height)설정-->
+        <img src="D:\웹개발 독학\imeage file\img_flag.png" alt="html size" width="320" height="214">
+        <img src="D:\웹개발 독학\imeage file\img_flag.png" alt="style size" style="width: 320px; height: 214px;">
+        <br>
+        
+        <!--이미지의 테두리(border)설정-->
+        <img src="D:\웹개발 독학\imeage file\img_flag.png" alt="이미지 테두리"
+        style="width: 320px; height: 214px; border: 3px solid red;">
+        <br>
+
+        <!--이미지에 링크(link) 설정-->
+        <a href="http://tcpschool.com/" target="_blank">
+            <img src="D:\웹개발 독학\imeage file\img_flag.png" alt="img_flag" style="width: 320px; height: 214px; border: 5px solid purple;" >
+        </a>
+        <br>
+
+        <!--이미지 맵 만들기-->
+        <img src="D:\웹개발 독학\imeage file\img_imagemap.jpg" alt="진실혹은거짓" usemap="#vending" style="width: 320px; height: 240px;" />
+        <map name="vending">
+            <area shape="rect" coords="90,60,180,130" href="https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%A7%93%EB%A7%90" alt="거짓">
+            <area shape="rect" coords="210,200,70,130" href="https://ko.wikipedia.org/wiki/%EC%A7%84%EC%8B%A4" alt="진실">
+        </map>
+    </body>
+</html>

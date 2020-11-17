@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드림왕자의 강의_HTML5 그래픽</title>
+</head>
+<body>
+   <h1>canvas 요소에 사각형 그리기</h1>
+
+   <canvas id="drawCanvas" width="300px" height="200px" style="border: 1px solid #993300;">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas");
+        var context = paper.getContext("2d");
+        context.strokeRect(10, 10, 250, 130);
+
+        context.fillStyle = "rgba(255, 0, 0, 1)";
+        context.fillRect(20, 20, 200, 100);
+
+        context.clearRect(30, 30, 150, 50);
+    </script>
+
+    <p>
+        가장 바깥쪽에 strokeRect() 함수를 사용하여 선만으로 이루어진 사각형을 그립니다.<br>
+		그 다음에는 fillRect() 함수를 사용하여 빨간색으로 채워진 사각형을 그립니다.<br>
+		가장 안쪽에는 clearRect() 함수를 사용하여 사각형 모양으로 안의 내용을 지워줍니다.
+    </p>
+    <br><br><hr>
+
+    <h1>canvas 요소에 선 그리기</h1>
+
+    <canvas id="drawCanvas2" width="300px" height="200px" style="border: 1px solid #993300;">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas2");
+        var context = paper.getContext("2d");
+        context.moveTo(0, 0);
+        context.lineTo(300, 100);
+        context.lineTo(150, 150);
+        context.stroke();
+    </script>
+    <br><br><hr>
+
+    <h1>선 그리기를 이용한 도형 만들기</h1>
+
+    <canvas id="drawCanvas3" width="300px" height="200px" style="border: 1px solid #993300">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지우너하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas3");
+        var context = paper.getContext("2d");
+        context.moveTo(0,0);
+        context.lineTo(300,200);
+        context.lineTo(150,0);
+        context.lineTo(0, 0);
+        context.fillStyle = "#0099FF";
+        context.fill();
+        context.stroke();
+    </script>
+    <br><br><hr>
+
+    <h1>canvas 요소에 원 그리기</h1>
+
+    <canvas id="drawCanvas4" width="300px" height="200px" style="border: 1px solid #993300;">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas4");
+        var context = paper.getContext("2d");
+        context.beginPath();
+        context.arc(150, 100, 50, 0, 2 * Math.PI);
+        context.stroke();
+    </script>
+    <br><br><hr>
+
+    <h1>원 그리기를 이용한 원호 그리기</h1>
+
+    <canvas id="drawCanvas5" width="300px" height="200px" style="border: 1px solid #993300;">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas5");
+        var context = paper.getContext("2d");
+
+        context.beginPath();
+        context.moveTo(100, 100);
+        context.arc(100, 100, 120, 0, 45 * Math.PI / 180);
+        context.closePath();
+        context.stroke();
+    </script>
+    <br><br><hr>
+
+    <h1>canvas 요소에 텍스트 그리기</h1>
+
+    <canvas id="drawCanvas6" width="300px" height="200px" style="border: 1px solid #993300;">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas6");
+        var context = paper.getContext("2d");
+
+        context.font = "40px Arial";
+        context.fillText("CANVAS", 50, 90);
+        context.strokeText("HTML5", 80, 150);
+    </script>
+    <br><br><hr>
+
+    <h1>canvas 요소에 선형 그래디언트 그리기</h1>
+
+    <canvas id="drawCanvas7" width="300px" height="200px" style="border: 1px solid #993300;">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas7");
+        var context = paper.getContext("2d");
+        
+        var gradient = context.createLinearGradient(0, 0, 200, 0);
+        gradient.addColorStop(0, "#FFCC00");
+        gradient.addColorStop(1, "#FFCCCC");
+
+        context.fillStyle = gradient;
+        context.font = "45px Arial black";
+        context.fillText("CANVAS", 15, 120);
+    </script>
+    <br><br><hr>
+
+    <h1>canvas 요소에 원형 그래디언트 그리기</h1>
+
+	<canvas id="drawCanvas8" width="300px" height="200px" style="border: 1px solid #993300">
+		이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+	</canvas>
+
+    <script>
+        var paper = document.getElementById("drawCanvas8");
+        var context = paper.getContext("2d");
+
+        var gradient = context.createRadialGradient(100, 100, 200, 150, 150, 30);
+        gradient.addColorStop(0, "black");
+        gradient.addColorStop(1, "white");
+
+        context.fillStyle = gradient;
+        context.fillRect(0, 0, 300, 300);
+    </script>
+    <br><br><hr>
+
+    <h1>canvas 요소에 이미지 그리기</h1>
+
+    <img id="kimgoun" src="D:\웹개발 독학\imeage& audio file\01.22199898.1.jpg" alt="김고은" width="630px" height="420px">
+    <p>원본 이미지</p>
+    <canvas id="drawCanvas9" width="650px" height="440px" style="border: 1px solid #993300">
+        이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+    </canvas>
+    <p><button onclick="drawImage()">이미지 그리기</button></p>
+
+    <script>
+        function drawImage(){
+            var paper = document.getElementById("drawCanvas9");
+            var context = paper.getContext("2d");
+            var srcimg = document.getElementById("kimgoun");
+            context.drawImage(srcimg, 10, 10);
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

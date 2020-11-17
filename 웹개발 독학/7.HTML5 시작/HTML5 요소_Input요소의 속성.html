@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드림왕자의 강의_HTML5 요소</title>
+</head>
+<body>
+    
+    <h1>autocomplete 속성을 이용한 자동 완성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" autocomplete="on">
+        이름 : <input type="text" name="name"><br>
+        나이 : <input type="number" name="age" min="1" max="99" autocomplete="off"><br><br>
+        <a href="http://tcpschool.com/html/intro">HTML 수업</a>
+        <p>input 요소에 데이터를 입력하고 전송 버튼을 누른 후에 F5키를 눌러 보세요!<br>
+        그리고 나서 같은 정보를 입력하려고 하면 이전 데이터가 아래에 팝업될 거예요!</p>
+        <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>novalidate 속성을 이용한 유효성 검사 여부 명시</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" autocomplete="on">
+        여러분이 자주 들리는 사이트의 URL 주소를 입력해 주세요 :<br><br>
+        <input type="url" name="url">
+        <input type="submit" value="전송"><br>
+    </form>
+
+    <p><br>novalidate 속성을 적용하면 클라이언트 측의 유효성 검사를 건너뛸 수 있습니다.</p>
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" novalidate>
+        여러분이 자주 들리는 사이트의 URL 주소를 입력해 주세요 :<br><br>
+        <input type="url" name="url">
+        <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>autofocus 속성을 이용한 오토 포커싱</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+        사용자 : <input type="text" name="username"><br>
+        비밀번호 : <input type="password" name="password" autofocus><br><br>
+        <input type="submit" value="전송">
+    </form>
+    <p>페이지 로드 시 자동으로 포커스가 비밀번호를 입력하는 input 요소에 가도록 합니다.</p>
+    <br><br><hr>
+
+    <h1>form 속성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" id="user">
+        사용자 : <input type="text" name="username"><br><br>
+        <input type="submit" value="전송">
+    </form>
+    <p>아래의 비밀번호를 입력하는 input 요소는 위치상으로는 form 요소에 포함되지 않습니다.<br>
+    하지만 form 속성을 이용하여 하나의 form으로 인식할 수 있습니다.
+    </p>
+    비밀번호 : <input type="password" name="password" form="user"><br>
+    <br><br><hr>
+
+    <h1>formaction 속성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+        사용자 : <input type="text" name="username"><br>
+        비밀번호 : <input type="password" name="password"><br><br>
+        <input type="submit" value="전송">
+        <input type="submit" value="관리자 권한으로 전송" formaction="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+    </form>
+    <br><br><hr>
+
+    <h1>formenctype 속성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" method="POST">
+        사용자 이름을 입력해주세요 : <input type="text" name="username"><br><br>
+        <input type="submit" value="암호화하여 전송" formenctype="multipart/form-data"><br>
+    </form>
+    <br><br><hr>
+
+    <h1>formmethod 속성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php" method="GET">
+        사용자 이름을 입력해주세요 : <input type="text" name="username"><br><br>
+        <input type="submit" value="post 방식으로 전송" formmethod="POST"><br>
+    </form>
+    <br><br><hr>
+
+    <h1>formnovalidate 속성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+        여러분이 자주 들리는 사이트의 URL 주소를 입력해 주세요 : <input type="url" name="url"><br><br>
+        <input type="submit" value="전송">
+        <input type="submit" value="novalidate 방식으로 전송" formnovalidate><br>
+    </form>
+    <br><br><hr>
+
+    <h1>formtarget 속성</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+        사용자 이름을 입력해주세요 : <input type="text" name="username"><br><br>
+        <input type="submit" value="전송">
+        <input type="submit" value="응답 화면을 새창에 표시" formtarget="_blank"><br>
+    </form>
+    <br><br><hr>
+
+    <h1>height와 width 속성을 이용한 이미지의 크기 설정</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+        사용자 : <input type="text" name="username"><br>
+        비밀번호 : <input type="password" name="password" autofocus><br><br>
+        <input type="image" src="D:\웹개발 독학\imeage file\01.22199898.1.jpg" alt="전송" height="26" width="26">
+        그림을 클릭하시면 전송됩니다!
+    </form>
+    <br><br><hr>
+
+    <h1>list 속성을 이용한 datalist 요소</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+       <input list="lectures" name="lecture">
+       <datalist id="lectures">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JAVA">
+            <option value="C++">
+       </datalist>
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>min과 max 속성을 이용한 입력값 제한</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+       여러분이 가장 좋아하는 숫자는 몇인가요?<br>
+       (단, 1부터 9까지에서 골라주세요!)<br><br>
+       <input type="number" name="favnum" min="1" max="9"><br><br>
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>multiple 속성을 이용한 다중 파일 전송</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+       서버로 전송할 파일을 선택해주세요 : <br>
+       (여러 개의 파일 ㅅ너택도 가능해요!)<br><br>
+       <input type="file" name="uploadfile" multiple><br><br>
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>pattern 속성을 이용한 입력 형식 제한</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+       여러분의 이메일 주소를 입력해 주세요 :<br><br>
+       <input type="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]*[a-zA-Z]*" title="이메일 양식">
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>placeholder 속성을 이용한 힌트 제공</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+      사용자 : <input type="text" name="username" placeholder="금빛나"><br>
+      비밀번호 : <input type="password" name="password" placeholder="1234"><br><br>
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>required 속성을 이용한 필수 입력 설정</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+      이름 : <input type="text" name="name" required> (이름은 반드시 입력해야 해요!)<br>
+      나이 : <input type="number" name="age" min="1" max="99"><br><br>
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+
+    <h1>step 속성을 이용한 입력 간격 설정</h1>
+
+    <form action="D:\웹개발 독학\7.HTML5 시작\HTML5 요소_Input요소.php">
+        여러분이 가장 좋아하는 숫자는 몇인가요?<br>
+        (단, -30부터 30사이에서 5단위로 골라주세요!)<br><br>
+        <input type="number" name="favnum" min="-30" max="30" step="5"><br><br>
+       <input type="submit" value="전송">
+    </form>
+    <br><br><hr>
+</body>
+</html>
+</body>
+</html>
