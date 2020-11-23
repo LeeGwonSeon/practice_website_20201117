@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드림왕자의 강의_HTML5 API</title>    
+</head>
+<body>
+    <h1>server sent events를 이용한 자동 갱신</h1>
+
+    <div id="result"></div>
+    <script>
+        if (typeof(EventSource) !== "undefined") {
+            // server sent events를 위한 코드 부분
+            var source = new EventSource("C:\React Project Tutorial\practice_website_20200727\웹개발 독학\7.HTML5 시작\sse.php");
+            source.onmessage = function(event){
+                document.getElementById("result").innerHTML += event.data + "<br>";
+            };
+        } else {
+            // server sent events를 지원하지 않는 브라우저를 위한 안내 부분
+            document.getElementById("result").innerHTML = "이 문장은 사용자의 웹 브라우저가 Server Sent Events를 지원하지 않을 때 나타납니다!";
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
