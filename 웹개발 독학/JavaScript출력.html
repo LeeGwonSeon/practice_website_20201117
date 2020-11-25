@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+    <h1>Window 객채의 alert() 메소드</h1>
+    <button onclick="alertDialogBox()">alert 대화 상자</button>
+    <script>
+        function alertDialogBox(){
+            alert("확인을 누를 때까지 다른 작업을 할 수 없어요!");
+        }
+    </script>
+    <br><br><hr>
+
+    <h1>HTNL DOM 요소를 이용한 innerHTML 프로퍼티</h1>
+    <p id="text">이 문장을 바꿀 것입니다!</p>
+
+    <script>
+        var str = document.getElementById("text");
+        str.innerHTML = "이 문장으로 바뀌었습니다!";
+    </script>
+    <br><br><hr>
+
+    <h1>Document 객채의 write() 메소드</h1>
+
+    <script>
+        document.write(4 * 5);
+    </script>
+    <br><br><hr>
+
+    <h1>Document 객채의 write() 메소드</h1>
+
+    <button onclick="document.write(4 * 5)">버튼을 눌러보세요!</button>
+    <br><br><hr>
+
+    <h1>console.log() 메소드</h1>
+
+    <p>F12를 눌러서 콘솔 화면을 열면 결과를 확인할 수 있습니다.</p>
+	<script>
+		console.log(4 * 5);
+	</script>
+</body>
+</html>
