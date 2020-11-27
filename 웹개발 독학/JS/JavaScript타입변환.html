@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>같은 변수에 다른 타입의 값 대입</h1>
+    <p id="result"></p>
+
+    <script>
+        var num = 20;       // 변수의 선언과 함께 초기화
+        document.getElementById("result").innerHTML = num + "<br>";
+        num = "이십";       // 문자열 대입
+        document.getElementById("result").innerHTML += num + "<br>";
+        var num;            // 한 변수를 여런 번 초기화할 수는 있으나, 재선언은 할 수 없습니다.
+        document.getElementById("result").innerHTML += num;
+
+    </script>
+</body>
+</html>

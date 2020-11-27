@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>묵시적 타입 변환</h1>
+    <p id="result"></p>
+
+    <script>
+        var result = 10 + "문자열";     // 문자열 연결을 위해 숫자 10이 문자열로 변환됨.
+        document.getElementById("result").innerHTML = result + "<br>";
+        result = "3" * "5";            // 곱셈 연산을 위해 두 문자열이 모두 숫자로 변환됨.
+        document.getElementById("result").innerHTML += result + "<br>";
+        result = 1 - "문자열"          //NaN
+        document.getElementById("result").innerHTML += result;
+    </script>
+</body>
+</html>

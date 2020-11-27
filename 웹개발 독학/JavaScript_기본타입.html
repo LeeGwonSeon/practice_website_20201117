@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+    
+    <h1>숫자 타입</h1>
+    <p id="number"></p>
+
+    <script>
+        var firstNum = 10;       // 소수점을 사용하지 않은 표현
+        var secondNum = 10.00    // 소수점을 사용한 표현
+        var thirdNum = 10e6      // 10000000
+        var fourthNum = 10e-6    //0.00001
+
+        document.getElementById("number").innerHTML = 
+            firstNum + "<br>" + secondNum + "<br>" + thirdNum + "<br>" + fourthNum + "<br>";
+    </script>
+    <br><br><hr>
+
+    <h1>문자열 타입</h1>
+    <p id="str"></p>
+
+    <script>
+        var firstStr = "이것도 문자열입니다.";          // 큰따옴표를 사용한 문자열
+        var secondStr = '이것도 문자열입니다.';         // 작은따옴표를 사용한 문자열
+        var thirdStr = "니의 이름은 '키리토'이야."      // 작은따옴표는 큰따옴표로 둘러싸인 문자열에만 포함될 수 있음
+        var fourthStr = '나의 이름은 "키리토"이야.'     // 큰따옴표는 작은따옴표로 둘러싸인 문자열에만 포함될 수 있음
+
+        document.getElementById("str").innerHTML =
+            firstStr + "<br>" + secondStr + "<br>" + thirdStr + "<br>" + fourthStr + "<br>";
+    </script>
+    <br><br><hr>
+
+    <h1>숫자와 문자열의 덧셈</h1>
+    <p id="result"></p>
+
+    <script>
+        var num = 10;
+        var str = "JavaScript";
+
+        document.getElementById("result").innerHTML = (num + str); //10JavaScript
+    </script>
+    <br><br><hr>
+
+    <h1>블리언 타입</h1>
+    <p id="result2"></p>
+
+    <script>
+        var firstNum = 10;
+        var secondNum = 11;
+
+        document.getElementById("result2").innerHTML = (firstNum == secondNum); // false
+    </script>
+    <br><br><hr>
+
+    <h1>심볼 타입</h1>
+    <p id="result3"></p>
+
+    <script>
+        var sym = Symbol("javascript");     // 심볼 타입
+        var symObj = Object(sym);           // 객체 타입
+
+        document.getElementById("result3").innerHTML = (typeof sym) + "<br>" + (typeof symObj);
+    </script>
+    <br><br><hr>
+
+    <h1>typeof 연산자</h1>
+    <p id="result4"></p>
+
+    <script>
+        document.getElementById("result4").innerHTML = (typeof 10) + "<br>";
+        document.getElementById("result4").innerHTML += (typeof "문자열") + "<br>";
+        document.getElementById("result4").innerHTML += (typeof true) + "<br>";
+        document.getElementById("result4").innerHTML += (typeof undefined) + "<br>";
+        document.getElementById("result4").innerHTML += (typeof null);
+    </script>
+    <br><br><hr>
+
+    <h1>null과 undefined</h1>
+    <p id="result5"></p>
+
+    <script>
+        var num2;        // 초기화하지 않았으므로 undefined 값을 반환함.
+        var str2 = null; // object 타입의 null 값
+
+        // 정의되지 않은 변수에 접근하면 undefined 값을 반환함.
+        document.getElementById("result5").innerHTML =
+            (typeof num2) + "<br>" + (typeof str2) + "<br>" + (typeof secondNum2);
+    </script>
+    <br><br><hr>
+
+    <h1>객체 타입</h1>
+    <p id="result6"></p>
+
+    <script>
+        var dog = { name: "해피", age: 3 };     //객체의 생성
+
+        // 객체의 프로퍼티 참조
+        document.getElementById("result6").innerHTML =
+            "강아지의 이름은 " + dog.name + "이고, 나이는 " + dog.age + "살 입니다."; 
+    </script>
+</body>
+</html>
