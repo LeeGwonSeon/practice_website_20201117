@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>배열 요소의 추가</h1>
+
+    <script>
+        var arr = [1, true, "Java"];
+        arr.push("Script");             // push() 메소드를 이용하는 방법
+        document.write(arr + "<br>");
+
+        arr[arr.length] = 100;          // length 프로퍼티를 이용하는 방법
+        document.write(arr + "<br>");
+
+        arr[10] = "자바스크립트";       // 특정 인덱스를 저장하여 추가하는 방법
+        document.write(arr + "<br>");
+        document.write(arr[7]);         // undefined
+    </script>
+    
+</body>
+</html>
