@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_CSS</title>
+    <style>
+        .container {
+            border: 3px solid red;
+            width: 100%;
+            height: 1000px;
+            position: relative;
+        }
+        .position {
+            width: 150px;
+            height: 50px;
+            top: 100px;
+            left: 120px;
+        }
+        .static {
+            border: 3px solid black;
+            position: static;
+        }
+        .relative {
+            border: 3px solid green;
+            position: relative;
+        }
+        .fixed {
+            border: 3px solid orange;
+            position: fixed;
+        }
+        .absolute {
+            border: 3px solid blue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>정적 위치(static position) 지정 방식의 특징</h1>
+	<div class="container">
+		<div class="static position">정적 위치(static position)</div>
+		<div class="relative position">상대 위치(relative position)</div>
+		<div class="fixed position">고정 위치(fixed position)</div>
+		<div class="absolute position">절대 위치(absolute position)</div>
+	</div>
+	
+</body>
+</html>

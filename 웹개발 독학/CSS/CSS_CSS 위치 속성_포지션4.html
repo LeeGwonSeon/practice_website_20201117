@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_CSS</title>
+    <style>
+        div.relative {
+            border: 2px solid #b8860b;
+            width: 500px;
+            height: 200px;
+            position: relative;
+        }
+        div.absolute {
+            border: 2px solid #006400;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>절대 위치(absolute position) 지정 방식</h1>
+	<div class="relative">이 요소는 상대 위치 지정 방식으로 위치를 설정하였습니다.
+		<div class="absolute">이 요소는 절대 위치 지정 방식으로 위치를 설정한 후, top 속성값을 50px로 설정하였습니다.</div>
+	</div>
+	<div class="absolute">이 요소는 절대 위치 지정 방식으로 위치를 설정한 후, top 속성값을 50px로 설정하였습니다.</div>
+	<p>절대 위치는 해당 요소의 바로 상위의 위치가 설정된 조상(ancestor) 요소에 따라 위치를 재조정하는 방식입니다!</p>
+	
+</body>
+</html>
