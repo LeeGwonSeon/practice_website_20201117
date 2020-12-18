@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_CSS</title>
+    <style>
+        
+        .position {
+            width: 180px;
+            height: 50px;
+            
+        }
+        .static {
+            background-color: lightblue;
+            position: static;
+        }
+        .first {
+            background-color: orange;
+            position: fixed;
+            top: 90px;
+            left: 120px;
+        }
+        .last {
+            background-color: orange;
+            position: fixed;
+            top: 180px;
+            left: 120px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>z-index 속성을 이용한 노출 순서 변경</h1>
+	<div>
+		<div class="static position">정적 위치(static position)</div>
+		<div class="first position">고정 위치(fixed position)</div>
+	</div>
+	<br><br>
+	<div>
+		<div class="static position">정적 위치(static position)</div>
+		<div class="last position">고정 위치(fixed position)</div>
+	</div>
+	
+</body>
+</html>
