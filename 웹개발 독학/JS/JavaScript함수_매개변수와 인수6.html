@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>나머지 매개변수</h1>
+
+    <script>
+        function sub(){
+            var firstNum = arguments[0];    // 첫 번째 인수에서
+            for(var i = 0; i < arguments.length-1; i++){ // 두 번째부터 마지막 인수까지를
+                firstNum -= arguments[i+1]  // 뺌
+            }
+            return firstNum;
+        }
+        document.write(sub(10, 2, 3)+ "<br>"); // 10 - 2 - 3 = 5
+        document.write(sub(10, 1, 5, 8));      // 10 - 1 - 5 - 8 = -4
+    </script>
+    
+</body>
+</html>
