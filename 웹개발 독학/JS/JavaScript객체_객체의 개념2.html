@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>객체의 프로퍼티 참조</h1>
+
+    <script>
+       var person = {
+           name: "이지아",              // 이름 프로퍼티를 정의함.
+           birthday: "030219",      // 생년월일 프로퍼티를 정의함.
+           pld: "1234567",          // 개인 id 프로퍼티를 정의함.
+           fullld: function(){      // 생년월일과 개인 id를 합쳐서 주민등록번호를 반환함.
+               return this.birthday + this.pld
+           }
+       };
+
+       document.write(person.name + "<br>");    // 이지아
+       document.write(person["name"]);          // 이지아
+    </script>
+    
+</body>
+</html>

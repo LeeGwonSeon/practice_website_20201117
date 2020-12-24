@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_CSS</title>
+    <style>
+        div { border: 3px solid #FFE4E1; }
+        div ~ p { background-color: #FFE4E1; }
+    </style>
+</head>
+<body>
+  
+    <h1>일반 동위 선택자를 이용한 선택</h1>
+	<p>이 p 태그는 div 태그의 sibling 이지만 div 태그보다 앞에 나옵니다!</p>
+	<div>
+		<p>이 p 태그는 div 태그의 child 입니다!</p>
+		<p>이 p 태그는 div 태그의 child 입니다!</p>
+		<p>이 p 태그는 div 태그의 child 입니다!</p>
+	</div>
+	<p>이 p 태그는 div 태그의 sibling 입니다!</p>
+	<p>이 p 태그는 div 태그의 sibling 입니다!</p>
+    
+</body>
+</html>
