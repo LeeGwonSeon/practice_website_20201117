@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>객체의 hasOwnProperty() 메소드</h1>
+
+    <script>
+       function Dog (color, name, age) {
+            this.color = color;
+            this.name = name;
+            this.age = age;
+       }
+       var myDog = new Dog("흰색", "마루", 1);
+       // color 프로퍼티의 enumerable 속성을 false로 설정함
+       Object.defineProperty(myDog, 'color', {enumerable : false} );
+
+       document.write(myDog.propertyIsEnumerable("color") + "<br>");     // false
+       document.write(myDog.propertyIsEnumerable("name") + "<br>");      // true
+       document.write(myDog.propertyIsEnumerable("age"));                // true
+    </script>
+    
+</body>
+</html>

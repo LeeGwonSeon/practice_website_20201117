@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_CSS</title>
+    <style>
+        div.first{ border: 3px solid #008000; }
+        div.second{ border: 3px solid #FFD700; }
+        p:first-of-type {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>:first-of-type을 이용한 선택</h1>
+	<div class="first">
+		<p>이 p 태그는 div 태그의 child 요소 중에서 첫 번째로 등장하는 p 태그입니다!</p>
+		<p>이 p 태그는 div 태그의 child 입니다!</p>
+		<p>이 p 태그는 div 태그의 child 입니다!</p>
+		<div class="second">
+			<p>이 p 태그는 div 태그의 child 요소 중에서 첫 번째로 등장하는 p 태그입니다!</p>
+			<p>이 p 태그는 div 태그의 child 입니다!</p>
+			<p>이 p 태그는 div 태그의 child 입니다!</p>
+		</div>
+	</div>
+
+    
+</body>
+</html>
