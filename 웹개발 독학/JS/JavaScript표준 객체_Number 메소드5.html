@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>Number.isInteger() 메소드</h1>
+
+    <script>
+        document.write(Number.isInteger(0) + "<br>");           // true
+        document.write(Number.isInteger(-100) + "<br><br>");    // true
+
+        document.write(Number.isInteger(0.1) + "<br>");         // false
+        document.write(Number.isInteger("문자열") + "<br>");    // false
+        document.write(Number.isInteger(Infinity) + "<br>");    // false
+        document.write(Number.isFinite(true));                  // false
+    </script>
+</body>
+</html>
