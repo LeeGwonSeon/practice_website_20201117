@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>Long 날짜 양식</h1>
+
+    <script>
+        document.write(new Date("Feb 19 1982") + "<br>");       // MM DD YYYY
+        document.write(new Date("19 Feb 1982") + "<br>");       // DD MM YYYY
+        document.write(new Date("February 19 1982") + "<br>");  // 월의 축약형 뿐만 아니라 전체 단어도 인식함.
+        document.write(new Date("FEBRUARY, 19, 1982"));         // 쉼표는 무시되며, 대소문자의 구분은 없음.
+    </script>
+</body>
+</html>
