@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>아이디를 이용한 선택</h1>
+    <ul>
+        <li>첫 번째 아이템이에요!</li>
+		<li id="even">두 번째 아이템이에요!</li>
+		<li>세 번째 아이템이에요!</li>
+		<li id="even">네 번째 아이템이에요!</li>
+		<li>다섯 번째 아이템이에요!</li>
+    </ul>
+    <script>
+        var selectedItem = document.getElementById("even"); // 아이디가 "even"인 요소를 선택함.
+        selectedItem.style.color = "red";                   // 선택된 요소의 텍스트 색상을 변경함.
+    </script>
+</body>
+</html>
