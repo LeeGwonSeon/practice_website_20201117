@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_CSS</title>
+    <style>
+        div {
+            border: 10px dotted orange;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {color: red; }
+        #origin {
+            background: url(http://tcpschool.com/examples/images/img_penguin.png);
+            background-repeat: no-repeat;
+        }
+        #border {
+            background: url(http://tcpschool.com/examples/images/img_penguin.png);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        #content {
+            background: url(http://tcpschool.com/examples/images/img_penguin.png);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+  
+    <h1>background-origin 속성을 이용한 위치 조정</h1>
+
+	<div id="origin">
+		<h2>padding-box</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam tellus, pellentesque posuere urna sit amet, pellentesque tempus risus. Vivamus interdum dolor nec diam lacinia, luctus semper erat laoreet. Proin enim eros, pulvinar a tellus ac, porttitor pharetra turpis. Maecenas eros ex, venenatis a varius in, vestibulum vel tortor. Phasellus imperdiet imperdiet ex, nec accumsan leo tristique at. Praesent eget nisl posuere sem aliquet feugiat nec nec eros. Mauris commodo magna dictum, pretium diam non, interdum eros. Cras vitae mauris sit amet tortor cursus accumsan eget vel neque.</p>
+	</div>
+
+	<div id="border">
+		<h2>border-box</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam tellus, pellentesque posuere urna sit amet, pellentesque tempus risus. Vivamus interdum dolor nec diam lacinia, luctus semper erat laoreet. Proin enim eros, pulvinar a tellus ac, porttitor pharetra turpis. Maecenas eros ex, venenatis a varius in, vestibulum vel tortor. Phasellus imperdiet imperdiet ex, nec accumsan leo tristique at. Praesent eget nisl posuere sem aliquet feugiat nec nec eros. Mauris commodo magna dictum, pretium diam non, interdum eros. Cras vitae mauris sit amet tortor cursus accumsan eget vel neque.</p>
+	</div>
+
+	<div id="content">
+		<h2>content-box</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam tellus, pellentesque posuere urna sit amet, pellentesque tempus risus. Vivamus interdum dolor nec diam lacinia, luctus semper erat laoreet. Proin enim eros, pulvinar a tellus ac, porttitor pharetra turpis. Maecenas eros ex, venenatis a varius in, vestibulum vel tortor. Phasellus imperdiet imperdiet ex, nec accumsan leo tristique at. Praesent eget nisl posuere sem aliquet feugiat nec nec eros. Mauris commodo magna dictum, pretium diam non, interdum eros. Cras vitae mauris sit amet tortor cursus accumsan eget vel neque.</p>
+	</div>
+	
+</body>
+</html>
