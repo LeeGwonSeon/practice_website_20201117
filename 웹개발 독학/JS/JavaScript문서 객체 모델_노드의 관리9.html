@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>cloneNode() 메소드</h1>
+    <button onclick="cloneElement()">노드 복제</button>
+    <h2 id="item">JavaScript</h2>
+    <div id="list">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JQuery</p>
+    </div>
+
+    <script>
+        function cloneElement() {
+            var parent = document.getElementById("list");           // 아이디가 "list"인 요소를 선택함.
+            var originItem = document.getElementById("item");       // 아이디가 "item"인 요소를 선택함.
+            parent.appendChild(originItem.cloneNode(true));         // 해당 노드를 복제하여 리스트의 맨 마지막에 추가함.
+        }
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>
