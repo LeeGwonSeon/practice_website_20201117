@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        div {
+            height: 150px;
+            width: 200px;
+            position: absolute;
+            margin: 100px;
+        }
+        #origin { border: 3px solid black; }
+        #scale_in {
+            border: 3px solid red;
+            -webkit-transform: scale(1.5, 2);
+            -ms-transform: scale(1.5, 2);
+            transform: scale(1.5, 2);
+        }
+        #scale_de {
+            border: 3px solid orange;
+            -webkit-transform: scale(0.7, 0.7);
+            -ms-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>scale() 메소드를 이용한 요소의 크기 조절</h1>
+	<div id="origin">이 요소의 원래 크기입니다.</div>
+	<div id="scale_in">이 요소는 원래 크기에서 너비는 1.5배, 높이는 2배 커졌습니다.</div>
+	<div id="scale_de">이 요소는 원래 크기에서 너비는 0.7배, 높이는 0.7배 작아졌습니다.</div>
+
+</body>
+</html>

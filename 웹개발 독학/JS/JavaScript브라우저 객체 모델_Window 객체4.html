@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>브라우저 창 닫기</h1>
+    <button onclick="openWindow()">새로운 창 열기</button>
+    <button onclick="closeNewWindow()">새로 연 창 닫기</button>
+
+    <script>
+        var newWindowObj;
+        // 변수 strWindowFeatures를 통해 새롭게 여는 웹 브라우저 창의 옵션들을 일일이 설정할 수 있음.
+        var strWindowFeatures = "menubar = yes.location = yes.resizable = yesscrollbars = yes.status = yes";
+        function openWindow() {
+            newWindowObj = window.open("http://tcpschool.com/html/intro", "HTML 개요", strWindowFeatures);
+        }
+        function closeNewWindow() { // 새롭게 연 브라우저 창을 window 객체를 이용하여 다시 닫을 수 있음.
+            newWindowObj.close();
+        }
+    </script>
+
+</body>
+</html>
+
+

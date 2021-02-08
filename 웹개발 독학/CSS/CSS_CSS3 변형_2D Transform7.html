@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        div {
+            height: 150px;
+            width: 200px;
+            position: absolute;
+            margin: 30px;
+        }
+        #origin { border: 3px solid black; }
+        #matrix {
+            background-color: #87CEFA;
+            border: 3px solid red;
+            -webkit-transform: matrix(0.7, 0, 0, 0.7, 1, 0);
+            -ms-transform: matrix(0.7, 0, 0, 0.7, 0, 0);
+            transform: matrix(2, 0.3, 0.2, 1.3, 150, 100);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>matrix() 메소드를 이용한 transform</h1>
+
+	<div id="origin">이 요소의 원래 모양입니다.</div>
+	<div id="matrix">이 요소는 원래 모양에서 
+		너비는 2배, 높이는 1.3배만큼 커졌으며,
+		기울기는 x축을 따라 20도, y축을 따라 30도만큼 기울어졌으며
+		위치는 x축의 양의 방향으로 150px, y축의 양의 방향으로 100px만큼 이동하였습니다.
+	</div>
+
+</body>
+</html>
