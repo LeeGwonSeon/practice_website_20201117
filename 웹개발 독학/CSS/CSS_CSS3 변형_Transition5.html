@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        #windmill {
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        #windmill:hover {
+            width: 300px;
+            height: 300px;
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>전환(transition) 효과와 변환(transform) 효과의 동시 적용</h1>
+	<div id="windmill"></div>
+	<p>사각형 위로 마우스를 올려놔 보세요!!</p>
+
+</body>
+</html>

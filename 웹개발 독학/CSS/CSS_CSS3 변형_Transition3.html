@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        div {
+            background-color: orange;
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 50px;
+            -webkit-transition: width 1s;
+            transition: width 1s;
+        }
+        #div_01 {
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+        #div_02 {
+            -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+        }
+        #div_03 {
+            -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+        }
+        #div_04 {
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+        #div_05 {
+            -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
+        div:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>전환(transition)의 속도 변화</h1>
+	<div id="div_01">linear</div>
+	<div id="div_02">ease</div>
+	<div id="div_03">ease-in</div>
+	<div id="div_04">ease-out</div>
+	<div id="div_05">ease-in-out</div>
+	<p>각 키보드 위로 마우스를 올려놔 보세요!!</p>
+
+</body>
+</html>
