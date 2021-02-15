@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+            background-color: orange;
+            border-radius: 150px;
+            line-height: 150px;
+            text-align: center;
+            -webkit-animation-name: movingPara;
+            -webkit-animation-duration: 2s;
+            animation-name: movingPara;
+            animation-duration: 2s;
+        }
+        @-webkit-keyframes movingPara {
+            from { transform: rotate(-45deg); }
+            to { transform: rotate(45deg); }
+        }
+        @keyframes movingPara {
+            from { transform: rotate(-45deg); }
+            to { transform: rotate(45deg); }
+        }
+        #backward {
+            -webkit-animation-direction: reverse;
+            animation-direction: reverse;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>animation-direction 속성값 - reverse</h1>
+	<div id="forward">오른쪽으로 도는 원</div>
+	<div id="backward">왼쪽으로 도는 원</div>
+
+</body>
+</html>

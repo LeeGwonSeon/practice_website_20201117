@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        div {
+            background-color: orange;
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            -webkit-animation: timingFunc 3s;
+            animation: timingFunc 3s;
+        }
+        #div_01 {
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+        }
+        #div_02 {
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+        }
+        #div_03 {
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+        #div_04 {
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+        #div_05 {
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes timingFunc {
+            from { left: 0px; }
+            to { left: 300px; }
+        }
+        @keyframes timingFunc {
+            from { left: 0px; }
+            to { left: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>애니메이션 효과의 속도 변화</h1>
+
+	<div id="div_01">linear</div>
+	<div id="div_02">ease</div>
+	<div id="div_03">ease-in</div>
+	<div id="div_04">ease-out</div>
+	<div id="div_05">ease-in-out</div>
+
+</body>
+</html>

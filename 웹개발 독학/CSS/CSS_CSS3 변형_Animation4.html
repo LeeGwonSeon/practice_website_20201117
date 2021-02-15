@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        #one, #loop {
+            height: 40px;
+            width: 400px;
+            position: relative;
+            border: solid 5px red;
+            -webkit-animation-name: movingPara;
+            -webkit-animation-duration: 4s;
+            animation-name: movingPara;
+            animation-duration: 4s;
+        }
+        @-webkit-keyframes movingPara {
+            0% { border-color: red; transform: rotateX(0deg); }
+            20% { border-color: orange; }
+            40% { border-color: yellow; }
+            50% { border-color: green; transform: rotateX(180deg); }
+            60% { border-color: blue; }
+            80% { border-color: navy; }
+            100% { border-color: purple; transform: rotateX(360deg); }
+        }
+        @keyframes movingPara {
+            0% { border-color: red; transform: rotateX(0deg); }
+            20% { border-color: orange; }
+            40% { border-color: yellow; }
+            50% { border-color: green; transform: rotateX(180deg); }
+            60% { border-color: blue; }
+            80% { border-color: navy; }
+            100% { border-color: purple; transform: rotateX(360deg); }
+        }
+        #one {
+            -webkit-animation-iteration-count: 2;
+            animation-iteration-count: 2;
+        }
+        #loop {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>애니메이션의 반복</h1>
+	<p id="one">이 애니메이션 효과는 두 번 반복될 거에요!</p>
+	<p id="loop">이 애니메이션 효과는 영원히 반복될 거에요!</p>
+
+</body>
+</html>

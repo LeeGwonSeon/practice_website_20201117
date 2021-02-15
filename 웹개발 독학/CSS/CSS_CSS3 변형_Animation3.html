@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        p {
+            height: 40px;
+            width: 400px;
+            position: relative;
+            border: solid 5px red;
+            -webkit-animation-name: movingPara;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-delay: 2s;
+            animation-name: movingPara;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+        @-webkit-keyframes movingPara {
+            0% { border-color: red; transform: rotateY(0deg); }
+            20% { border-color: orange; }
+            40% { border-color: yellow; }
+            50% { border-color: green; transform: rotateY(180deg); }
+            60% { border-color: blue; }
+            80% { border-color: navy; }
+            100% { border-color: purple; transform: rotateY(360deg); }
+        }
+        @keyframes movingPara {
+            0% { border-color: red; transform: rotateY(0deg); }
+            20% { border-color: orange; }
+            40% { border-color: yellow; }
+            50% { border-color: green; transform: rotateY(180deg); }
+            60% { border-color: blue; }
+            80% { border-color: navy; }
+            100% { border-color: purple; transform: rotateY(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>애니메이션의 지연</h1>
+	<p>이 애니메이션 효과는 2초 뒤에 시작될 거에요!</p>
+
+</body>
+</html>
