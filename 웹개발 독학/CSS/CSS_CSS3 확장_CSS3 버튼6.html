@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <style>
+        .btn {
+            background-color: orange;
+            height: 70px;
+            width: 150px;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 22px;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .btn span {
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .btn span::after {
+            content: "▶";
+            color: white;
+            position: absolute;
+            top: -2px;
+            right: -22px;
+            opacity: 0;
+            font-size: 30px;
+            transition: 0.5s;
+        }
+        .btn:hover span { padding-right: 30px; }
+        .btn:hover span::after {
+            opacity: 1;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>애니메이션 버튼</h1>
+	<button class="btn"><span>버튼</span></button>
+
+</body>
+</html>
