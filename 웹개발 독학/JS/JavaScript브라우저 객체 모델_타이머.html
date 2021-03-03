@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>setTimeout() 메소드</h1>
+    <button onclick="startTimeout()">2초 뒤에 현재 시간을 표시합니다!</button>
+    <p id="date"></p>
+
+    <script>
+        function startTimeout() {
+            setTimeout(printCurrentDate, 2000);
+        }
+        function printCurrentDate() {
+            document.getElementById("date").innerHTML = new Date();
+        }
+    </script>
+
+</body>
+</html>
+
+
