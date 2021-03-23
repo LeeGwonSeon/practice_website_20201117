@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>정규 표현식의 괄호</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "Hong Gil Dong";
+        var nameReg = /(\w+)\s(\w+)\s(\w+)/;                    // 공백 문자를 기준으로 각 부분 문자열을 저장함.
+        var endName = targetStr.replace(nameReg, "$2 $3 $1");   // 첫 번째 부분 문자열을 맨 마지막으로 위치시킴.
+        document.getElementById("text").innerHTML = endName;
+    </script>
+</body>
+</html>

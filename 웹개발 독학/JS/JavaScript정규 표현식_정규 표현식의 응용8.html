@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>정규 표현식의 위치 문자</h1>
+    <p id="text"></p>
+
+    <script>
+        var firstStr = "Php";
+        var secondStr = "phP";
+        var strReg = /^p/;              // 단어의 맨 처음에 문자 'p'가 나타나는 경우를 검색함.
+        document.getElementById("text").innerHTML =
+            firstStr.match(strReg) + "<br>" + secondStr.match(strReg);
+    </script>
+</body>
+</html>
