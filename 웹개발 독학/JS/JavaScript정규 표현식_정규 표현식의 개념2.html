@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>단숞나 패턴 검색</h1>
+    <p id="text"></p>
+
+    <script>
+        var targetStr = "간장 공장 공장장은 강 공장장이고, 된장 공장 공장작은 장 공장장이다."
+        var strReg1 = /공장/;
+        var strReg2 = /장공/;
+
+        document.write(targetStr.search(strReg1) + "<br>");
+        document.write(targetStr.search(strReg2));
+    </script>
+</body>
+</html>

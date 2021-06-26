@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <script>
+        function sendRequest() {
+            var httpRequest = new XMLHttpRequest();
+            var currentState = "";
+            httpRequest.onreadystatechange = function() {
+                switch (httpRequest.readyState) {
+                    case XMLHttpRequest.UNSENT:
+                            currentState += "XMHttpRequest 객체의 현재 상태는 UBSET 입니다.<br>";
+                        break;
+                    case XMLHttpRequest.OPENED:
+                            currentState += "XMHttpRequest 객체의 현재 상태는 OPENED 입니다.<br>";
+                        break;
+                    case XMLHttpRequest.HEADERS_RECEIVED:
+                            currentState += "XMHttpRequest 객체의 현재 상태는 HEADERS_RECEIVED 입니다.<br>";
+                        break;
+                    case XMLHttpRequest.LOADING:
+                            currentState += "XMHttpRequest 객체의 현재 상태는 LOADING 입니다.<br>";
+                        break;
+                    case XMLHttpRequest.DONE:
+                            currentState += "XMHttpRequest 객체의 현재 상태는 DONE 입니다.<br>";
+                        break;
+                }
+                document.getElementById("status").innerHTML = currentState;
+
+                if (httpRequest.readyState == XMLHttpRequest.DONE && httpRequest.status == 200 ) {
+                    document.getElementById("text").innerHTML = httpRequest.responseText;
+                }
+            };
+            httpRequest.open("GET", "test중", true);
+            httpRequest.send();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>onreadystatechange 속성</h1>
+    <button type="button" onclick="sendRequest()">Ajax 요청 보내기!</button>
+    <p id="status"></p>
+    <p id="text"></p>
+</body>
+</html>

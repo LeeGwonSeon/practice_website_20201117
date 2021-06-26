@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>특수 문자 '\d'</h1>
+    <p id="text"></p>
+
+    <script>
+        var text = document.getElementById("text");
+        
+        var targetStr = "ab1bc2cd3de";
+        var reg1 = /\d/;
+        var reg2 = /[3-9]/;
+
+        text.innerHTML = targetStr.search(reg1) + "<br>";
+        text.innerHTML += targetStr.search(reg2);
+    </script>
+</body>
+</html>

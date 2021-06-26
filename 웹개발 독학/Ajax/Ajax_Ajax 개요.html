@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#requestBtn").on("click", function() {
+                $("#text").load("웹개발 독학/Ajax/ajax_intro_data.txt");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Ajax(Asynchronous JavaScript and XML)</h1>
+    <p id="text">이 단락에 다른 텍스트를 블러와보죠!</p>
+    <button id="requestBtn">데이터 블러오기!</button>
+</body>
+</html>
