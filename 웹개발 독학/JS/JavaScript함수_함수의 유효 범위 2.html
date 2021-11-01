@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>드림왕자의 강의_JS</title>
+</head>
+<body>
+
+    <h1>함수 호이스팅</h1>
+
+    <script>
+        var globalNum = 10;     // globalNum을 전역 변수로 선언함.
+
+        function printNum() {
+            document.write("지역 변수 globalNum 선언 전의 globalNum의 값은 " + globalNum + "입니다.<br>");
+			var globalNum = 20;	// globalNum을 지역 변수로 선언함.
+			document.write("지역 변수 globalNum 선언 후의 globalNum의 값은 " + globalNum + "입니다.<br>");
+        }
+        printNum();
+    </script>
+    
+</body>
+</html>
